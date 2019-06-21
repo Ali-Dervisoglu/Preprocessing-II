@@ -1,5 +1,21 @@
 .home {
 
+  header {
+    margin: 30px;
+	  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  @media @mobile {
+    header {
+    flex-direction: column;
+    align-items: center;
+    }
+  }
+
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +72,27 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+  }
+
+  .btn {
+    .btn-class (12px, 1px double teal, 20px, teal, white, 200px, 40px, pointer);
+    text-align: center;
+    line-height: 2;
+  }
+
+  @media @mobile {
+    .content-pick {
+      flex-direction: column;
+    }
+
+    .content-pick .destination {
+        width: 80%;
+        margin-left: 15%;
+    }
+    .btn {
+      background-color: dodgerblue;
+      width: 90%;
     }
   }
 }// home
